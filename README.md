@@ -35,16 +35,23 @@ Built with a focus on **human–computer interaction**, the assistant showcases 
 
 ## Demo Screenshots
 
+![](demoscreenshots/homeaivoice.png)
+
+![](demoscreenshots/narwhaleconvo.png)
+
+![](demoscreenshots/winnieconvo.png)
+
+![](demoscreenshots/catconvo.png)
 
 
 ## Work in Progress / Upcoming Additions
 
 This project is still evolving, and the next versions will include several planned improvements to enhance realism and user experience:
 
-- 🪄 **Voice Emotion Detection:** Adjust responses and tone based on user emotion.  
-- 💬 **Memory Feature:** Enable multi-turn conversations (context retention).  
-- 🌍 **Multilingual Support:** Understand and respond in multiple languages.  
-- 🎨 **Avatar Animations:** Make avatars blink, move, and react to user tone.  
-- 🔉 **Better Voice Quality:** Integrate advanced neural TTS for natural voice output.  
-- ☁️ **Cloud Deployment:** Deploy on web servers for universal access.  
-- 📱 **Cross-Platform Support:** Make it run smoothly on mobile and tablets.
+- **Voice Emotion Detection:** Adjust responses and tone based on user emotion.  
+- **Memory Feature:** Enable multi-turn conversations (context retention).  
+- **Multilingual Support:** Understand and respond in multiple languages.  
+- **Avatar Animations:** Make avatars blink, move, and react to user tone.  
+- **Better Voice Quality:** Integrate advanced neural TTS for natural voice output.  
+- **Cloud Deployment:** Deploy on web servers for universal access.  
+- **Cross-Platform Support:** Make it run smoothly on mobile and tablets.
