@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Voice Assistant (Local)</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="app">
+    <div class="card">
+      <header class="header">
+        <h1>🎙️ AI Voice Assistant</h1>
+
+        <!-- Avatar selector -->
+        <div class="avatar-bar">
+          <div class="avatar-label">Choose your companion:</div>
+          <div id="avatarList" class="avatar-list">
+            <button class="avatar-btn" data-persona="narwhal" aria-pressed="true">
+              <img class="avatar-img" src="{{ url_for('static', filename='avatarimgs/narwhaleavatar.gif') }}" alt="Narwhal">
+              <div class="avatar-name">Narwhal</div>
+            </button>
+
+            <button class="avatar-btn" data-persona="cat">
+              <img class="avatar-img" src="{{ url_for('static', filename='avatarimgs/catavatar.gif') }}" alt="Cat">
+              <div class="avatar-name">Cat</div>
+            </button>
+
+            <button class="avatar-btn" data-persona="winnie">
+              <img class="avatar-img" src="{{ url_for('static', filename='avatarimgs/winnieavatar.png') }}" alt="Winnie">
+              <div class="avatar-name">Winnie</div>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="chat" class="chat">
+        <!-- chat bubbles will be appended here -->
+      </main>
+
+      <footer class="footer">
+        <div class="controls">
+          <button id="recordBtn" class="btn">Start Recording</button>
+          <div id="status" class="status">Idle</div>
+        </div>
+        <audio id="responseAudio" controls preload="auto"></audio>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // small session id for memory & initial persona
+    window.sessionId = "sess_" + Date.now();
+    window.selectedPersona = "narwhal";
+  </script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
